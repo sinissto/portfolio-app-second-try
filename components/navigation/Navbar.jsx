@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import NavLink from "@/components/navigation/NavLink";
 
 const links = [
@@ -14,7 +13,6 @@ const links = [
 ];
 
 const Navbar = () => {
-  const pathname = usePathname();
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
